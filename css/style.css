@@ -373,7 +373,6 @@ button:focus,
 }
 
 .portfolio-item .portfolio-info {
-  position: absolute;
   bottom: 0;
   padding: 30px 15px 5px;
   width: 100%;
@@ -385,8 +384,11 @@ button:focus,
 }
 
 .portfolio-item .portfolio-info h3 {
-  margin: 0;
   line-height: 1;
+  color: #ffffff;
+}
+
+.portfolio-item .portfolio-info p {
   color: #ffffff;
 }
 
