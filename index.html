@@ -23,7 +23,7 @@
     </div>
 
     <nav class="navbar navbar-expand-lg bg-light navbar-light sticky-top shadow-sm">
-      <div class="container-fluid">
+      <div class="container">
         <a class="navbar-brand" href="#">Kevin Dao</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -32,10 +32,22 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link" href="#about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Features</a>
+              <a class="nav-link" href="#education">Education</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#experiences">Experiences</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
             </li>
           </ul>
         </div>
@@ -43,7 +55,7 @@
     </nav>
 
     <main role="main" class="main container mt-3 my-md-4 gray-bg">
-      <header class="header d-block section-wrapper mt-10">
+      <header id="about" class="header d-block section-wrapper mt-10 scroll-padding">
         <div class="d-flex justify-content-center mb-3">
           <img src="img/img-profile.jpg" width="150px" height="150px" alt="" class="rounded" />
         </div>
@@ -73,7 +85,7 @@
         </div>
       </header>
 
-      <section class="section-wrapper section-education">
+      <section id="education" class="section-wrapper section-education scroll-padding">
         <div class="container-fluid">
           <div class="row">
             <div class="col-md-12">
@@ -111,7 +123,7 @@
         </div>
       </section>
 
-      <section class="section-wrapper section-experience">
+      <section id="experiences" class="section-wrapper section-experience scroll-padding">
         <div class="container-fluid">
           <div class="row">
             <div class="col-md-12">
@@ -143,7 +155,7 @@
         </div>
       </section>
 
-      <section class="section-wrapper skills-wrapper">
+      <section id="skills" class="section-wrapper skills-wrapper scroll-padding">
         <div class="container-fluid">
           <div class="row">
             <div class="col-md-12">
@@ -153,24 +165,27 @@
             </div>
           </div>
 
-          <!-- <div class="row">
+          <div class="row">
             <div class="col-md-12">
-              <div class="progress-wrapper">
-                <div class="progress-item">
-                  <span class="progress-title">Marketing</span>
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="62" aria-valuemin="0"
-                      aria-valuemax="100" style="width: 62%"><span class="progress-percent"> 62%</span>
-                    </div>
-                  </div>
-                </div>
+              <div class="content-item">
+                <h3>Languages</h3>
+                <h5>Javascript, PHP, Python, HTML, CSS, Ruby, C++, SQL</h5>
               </div>
             </div>
-          </div> -->
-        </div>
+
+            <div class="col-md-12">
+              <div class="content-item">
+                <h3>Frameworks</h3>
+                <h5>
+                  Node.js, React, React Native, Firebase, Socket.IO, Express, GIT, Bootstrap, Tailwind
+                  Bootstrap, Jest, Django, Cucumber, Next.js
+                </h5>
+              </div>
+            </div>
+          </div>
       </section>
 
-      <section class="section-wrapper portfolio-section">
+      <section id="projects" class="section-wrapper portfolio-section scroll-padding">
         <div class="container-fluid">
           <div class="row">
             <div class="col-md-12">
@@ -261,7 +276,7 @@
         </div>
       </section>
 
-      <section class="section-contact section-wrapper gray-bg">
+      <section id="contact" class="section-contact section-wrapper gray-bg scroll-padding">
         <div class="container-fluid">
           <div class="row">
             <div class="col-md-12">
