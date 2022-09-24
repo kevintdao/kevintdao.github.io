@@ -1,13 +1,13 @@
 const sections = document.querySelectorAll("section");
 const navLi = document.querySelectorAll("nav .container ul li a");
-console.log(sections);
+var totalPageHeight = document.body.scrollHeight;
 
 window.onscroll = () => {
   var current = "";
 
   sections.forEach((section, i) => {
     const sectionTop = section.offsetTop;
-    if (i === sections.length - 1 && scrollY >= 2500) {
+    if (i === sections.length - 1 && scrollY + innerHeight >= totalPageHeight) {
       current = section.getAttribute("id");
     }
     if (scrollY >= sectionTop - 60) {
