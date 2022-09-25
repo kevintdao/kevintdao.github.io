@@ -1,3 +1,10 @@
+const tooltipTriggerList = document.querySelectorAll(
+  '[data-bs-toggle="tooltip"]'
+);
+const tooltipList = [...tooltipTriggerList].map(
+  (tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl)
+);
+
 const sections = document.querySelectorAll("section");
 const navLi = document.querySelectorAll("nav .container ul li a");
 var totalPageHeight = document.body.scrollHeight;
