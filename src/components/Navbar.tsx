@@ -32,8 +32,8 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="fixed w-full h-16 shadow-xl z-50">
-      <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
+    <header className="fixed w-full h-16 shadow-xl z-[100] bg-gray-50">
+      <nav className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
         <div className="text-2xl font-bold">Kevin Dao</div>
 
         <div>
@@ -51,7 +51,7 @@ const Navbar = () => {
             <AiOutlineMenu size={24} />
           </div>
         </div>
-      </div>
+      </nav>
 
       {/* mobile side menu */}
       <div
@@ -86,7 +86,7 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-    </nav>
+    </header>
   );
 };
 
