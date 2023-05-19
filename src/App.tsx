@@ -34,9 +34,9 @@ function App() {
         {items.map((item) => (
           <section
             id={item.id}
-            className="w-full md:h-screen p-2 flex items-center py-16"
+            className="w-full md:min-h-screen p-2 flex items-center py-16"
           >
-            <div className="max-w-[1240px] md:grid grid-cols-3 gap-8">
+            <div className="max-w-[1240px] m-auto md:grid grid-cols-3 gap-8">
               {item.component}
             </div>
           </section>

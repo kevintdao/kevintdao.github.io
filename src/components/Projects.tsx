@@ -1,5 +1,3 @@
-import { Link } from "react-router-dom";
-
 const projects = [
   {
     title: "Project 1",
@@ -24,6 +22,18 @@ const projects = [
     img: "https://picsum.photos/1280/720",
     tech: "React, TypeScript, TailwindCSS",
     url: "/projects/project-4",
+  },
+  {
+    title: "Project 5",
+    img: "https://picsum.photos/1280/720",
+    tech: "React, TypeScript, TailwindCSS",
+    url: "/projects/project-5",
+  },
+  {
+    title: "Project 6",
+    img: "https://picsum.photos/1280/720",
+    tech: "React, TypeScript, TailwindCSS",
+    url: "/projects/project-6",
   },
 ];
 
