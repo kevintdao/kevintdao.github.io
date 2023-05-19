@@ -1,19 +1,29 @@
+const items = [
+  {
+    label: "Languages",
+    content:
+      "TypeScript, JavaScript, PHP, Python, HTML, CSS, Ruby, Java, C++, SQL",
+  },
+  {
+    label: "Frameworks and Tools",
+    content:
+      "Node.js, React, React Native, Next.js, PostgreSQL, mySQL, Firebase, Socket.IO, Express, GIT, Bootstrap, TailwindCSS, Rails, Bootstrap, Jest, Django, Cucumber, Docker, Playwright, Heroku",
+  },
+];
+
 const Skills = () => {
   return (
-    <section
-      id="skills"
-      className="w-full md:h-screen p-2 flex items-center py-16"
-    >
-      <div className="max-w-[1240px] md:grid grid-cols-3 gap-8">
-        <div className="col-span-2">
-          <p className="uppercase text-xl tracking-widest text-indigo-600">
-            Skills
-          </p>
-          <h2>Languages</h2>
-          <h2>Frameworks and Tools</h2>
+    <div className="col-span-3">
+      <p className="uppercase text-xl tracking-widest text-indigo-600">
+        Skills
+      </p>
+      {items.map((item) => (
+        <div className="py-4">
+          <h2>{item.label}</h2>
+          <p>{item.content}</p>
         </div>
-      </div>
-    </section>
+      ))}
+    </div>
   );
 };
 

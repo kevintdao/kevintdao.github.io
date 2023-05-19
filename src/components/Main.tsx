@@ -1,4 +1,22 @@
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+
 import ProfileImage from "../assets/images/img-profile.jpg";
+
+const ICON_SIZE = 30;
+
+const links = [
+  {
+    name: "LinkedIn",
+    url: "https://www.linkedin.com/in/kevintdao/",
+    icon: <FaLinkedin size={ICON_SIZE} />,
+  },
+  {
+    name: "Github",
+    url: "https://github.com/kevintdao",
+    icon: <FaGithub size={ICON_SIZE} />,
+  },
+];
+
 const Main = () => {
   return (
     <div className="w-full h-screen text-center">
@@ -19,6 +37,18 @@ const Main = () => {
             Hi, I'm <span className="text-indigo-600">Kevin</span>
           </h1>
           <h1 className="py-2 text-gray-700">Software Engineer</h1>
+          <h1 className="py-2 text-gray-700">Full-Stack Developer</h1>
+          <p className="py-4 text-gray-600 sm:max-w-[700] m-auto">
+            I love developing web applications and learning new technologies.
+          </p>
+
+          <div className="flex items-center justify-between max-w-[330px] m-auto py-4 gap-4">
+            {links.map((link) => (
+              <a href={link.url} target="_blank" rel="noreferrer">
+                <div className="p-6 border rounded-lg">{link.icon}</div>
+              </a>
+            ))}
+          </div>
         </div>
       </div>
     </div>

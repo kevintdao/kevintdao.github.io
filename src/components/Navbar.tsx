@@ -1,5 +1,6 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
+import { classNames } from "../lib/utils";
 
 const links = [
   {
@@ -26,13 +27,30 @@ const links = [
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
+  const [shadow, setShadow] = useState(false);
 
   const handleNav = () => {
     setNav(!nav);
   };
 
+  useEffect(() => {
+    const handleShadow = () => {
+      if (window.scrollY >= 70) {
+        setShadow(true);
+      } else {
+        setShadow(false);
+      }
+    };
+    window.addEventListener("scroll", handleShadow);
+  }, []);
+
   return (
-    <header className="fixed w-full h-16 shadow-xl z-[100] bg-gray-50">
+    <header
+      className={classNames(
+        "fixed w-full h-16 z-[100]",
+        shadow ? "shadow-xl bg-gray-50" : ""
+      )}
+    >
       <nav className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
         <div className="text-2xl font-bold">Kevin Dao</div>
 
@@ -61,11 +79,12 @@ const Navbar = () => {
         onClick={handleNav}
       >
         <div
-          className={
+          className={classNames(
+            "fixed top-0 p-10 ease-in duration-500",
             nav
-              ? "md:hidden fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-gray-200 p-10 ease-in duration-500"
-              : "fixed left-[-100%] top-0 p-10 ease-in duration-500"
-          }
+              ? "md:hidden left-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-gray-200 p-10 ease-in duration-500"
+              : "left-[-100%]"
+          )}
         >
           <div>
             <div className="flex w-full items-center justify-between">

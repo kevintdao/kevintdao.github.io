@@ -30,42 +30,40 @@ const experiences = [
 
 const About = () => {
   return (
-    <section
-      id="about"
-      className="w-full md:h-screen p-2 flex items-center py-16"
-    >
-      <div className="max-w-[1240px] md:grid grid-cols-3 gap-8">
-        <div className="col-span-2">
-          <p className="uppercase text-xl tracking-widest text-indigo-600">
-            About
-          </p>
-          <h2>Education</h2>
-          {educations.map((education) => (
-            <div>
-              <p>{education.date}</p>
+    <div className="col-span-3">
+      <p className="uppercase text-xl tracking-widest text-indigo-600">About</p>
+      <div className="py-4">
+        <h2>Education</h2>
+        {educations.map((education) => (
+          <div className="py-2">
+            <p>{education.date}</p>
+            <div className="flex justify-between">
               <p>{education.school}</p>
               <p>{education.gpa}</p>
-              <p>{education.degree} </p>
             </div>
-          ))}
-          <h2>Experiences</h2>
-          {experiences.map((experience) => (
-            <div>
-              <p>{experience.date}</p>
-              <p>{experience.position}</p>
-              <p>{experience.company}</p>
-              <ul className="list-outside list-desc ml-6">
-                {experience.items.map((item) => (
-                  <li className="cursor-default" key={item}>
-                    {item}
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ))}
-        </div>
+            <p>{education.degree} </p>
+          </div>
+        ))}
       </div>
-    </section>
+
+      <div className="py-4">
+        <h2>Experiences</h2>
+        {experiences.map((experience) => (
+          <div className="py-2">
+            <p>{experience.date}</p>
+            <p>{experience.position}</p>
+            <p>{experience.company}</p>
+            <ul className="list-disc list-desc ml-6">
+              {experience.items.map((item) => (
+                <li className="cursor-default" key={item}>
+                  {item}
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))}
+      </div>
+    </div>
   );
 };
 
