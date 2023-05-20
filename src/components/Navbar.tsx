@@ -47,7 +47,7 @@ const Navbar = () => {
   return (
     <header
       className={classNames(
-        "fixed w-full h-16 z-[100]",
+        "fixed w-full h-16 z-50",
         shadow ? "shadow-xl bg-gray-50" : ""
       )}
     >

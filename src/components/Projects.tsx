@@ -1,37 +1,44 @@
+import Project1 from "../assets/images/project1.png";
+import Project2 from "../assets/images/project2.png";
+import Project3 from "../assets/images/project3.png";
+import Project4 from "../assets/images/project4.png";
+import Project5 from "../assets/images/project5.png";
+import Project6 from "../assets/images/project6.png";
+
 const projects = [
   {
-    title: "Project 1",
-    img: "https://picsum.photos/1280/720",
+    title: "Tuneguessr",
+    img: Project1,
     tech: "React, TypeScript, TailwindCSS",
     url: "/projects/project-1",
   },
   {
-    title: "Project 2",
-    img: "https://picsum.photos/1280/720",
+    title: "IoT LED Chessboard",
+    img: Project2,
     tech: "React, TypeScript, TailwindCSS",
     url: "/projects/project-2",
   },
   {
-    title: "Project 3",
-    img: "https://picsum.photos/1280/720",
+    title: "Hospital Management System",
+    img: Project3,
     tech: "React, TypeScript, TailwindCSS",
     url: "/projects/project-3",
   },
   {
-    title: "Project 4",
-    img: "https://picsum.photos/1280/720",
+    title: "HVAC Electronic Records",
+    img: Project4,
     tech: "React, TypeScript, TailwindCSS",
     url: "/projects/project-4",
   },
   {
-    title: "Project 5",
-    img: "https://picsum.photos/1280/720",
+    title: "Student Medication Logs",
+    img: Project5,
     tech: "React, TypeScript, TailwindCSS",
     url: "/projects/project-5",
   },
   {
-    title: "Project 6",
-    img: "https://picsum.photos/1280/720",
+    title: "Pooling/Scheduling System",
+    img: Project6,
     tech: "React, TypeScript, TailwindCSS",
     url: "/projects/project-6",
   },
@@ -74,15 +81,18 @@ const Projects = () => {
       <p className="uppercase text-xl tracking-widest text-indigo-600">
         Projects
       </p>
-      <div className="grid md:grid-cols-2 gap-8 py-4">
-        {projects.map((project) => (
-          <ProjectItem
-            title={project.title}
-            img={project.img}
-            tech={project.tech}
-            url={project.url}
-          />
-        ))}
+      <div className="py-4">
+        <h2>What I have built</h2>
+        <div className="grid md:grid-cols-2 gap-8 py-4">
+          {projects.map((project) => (
+            <ProjectItem
+              title={project.title}
+              img={project.img}
+              tech={project.tech}
+              url={project.url}
+            />
+          ))}
+        </div>
       </div>
     </div>
   );

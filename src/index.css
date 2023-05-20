@@ -5,6 +5,11 @@
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 1rem;
+  /* scroll-snap-type: y proximity; */
+}
+
+section {
+  scroll-snap-align: start;
 }
 
 @layer base {

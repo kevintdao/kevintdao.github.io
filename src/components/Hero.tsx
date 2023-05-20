@@ -1,4 +1,5 @@
 import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { HiArrowDown } from "react-icons/hi";
 
 import ProfileImage from "../assets/images/img-profile.jpg";
 
@@ -20,7 +21,7 @@ const links = [
 const Main = () => {
   return (
     <div className="w-full h-screen text-center">
-      <div className="max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center">
+      <div className="max-w-[1240px] w-full h-full mx-auto p-2 py-32">
         <div className="flex flex-col items-center">
           <p className="uppercase text-sm tracking-widest text-gray-600 py-2">
             Welcome to my porfollio!
@@ -48,6 +49,12 @@ const Main = () => {
                 <div className="p-6 border rounded-lg">{link.icon}</div>
               </a>
             ))}
+          </div>
+
+          <div className="mt-0 sm:mt-4 md:mt-8">
+            <a href="#about">
+              <HiArrowDown size={ICON_SIZE} className="animate-bounce" />
+            </a>
           </div>
         </div>
       </div>

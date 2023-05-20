@@ -1,13 +1,45 @@
 const items = [
   {
     label: "Languages",
-    content:
-      "TypeScript, JavaScript, PHP, Python, HTML, CSS, Ruby, Java, C++, SQL",
+    content: [
+      "TypeScript",
+      "JavaScript",
+      "PHP",
+      "Python",
+      "HTML",
+      "CSS",
+      "Ruby",
+      "Java",
+      "C++",
+      "C",
+      "SQL",
+    ],
   },
   {
     label: "Frameworks and Tools",
-    content:
-      "Node.js, React, React Native, Next.js, PostgreSQL, mySQL, Firebase, Socket.IO, Express, GIT, Bootstrap, TailwindCSS, Rails, Bootstrap, Jest, Django, Cucumber, Docker, Playwright, Heroku",
+    content: [
+      "React",
+      "React Native",
+      "Next.js",
+      "Node.js",
+      "Express",
+      "TailwindCSS",
+      "Bootstrap",
+      "GIT",
+      "GitHub",
+      "GitLab",
+      "MySQL",
+      "PostgreSQL",
+      "MongoDB",
+      "Ruby on Rails",
+      "Jest",
+      "Cypress",
+      "Django",
+      "Cucumber",
+      "Docker",
+      "Playwright",
+      "Heroku",
+    ],
   },
 ];
 
@@ -20,7 +52,16 @@ const Skills = () => {
       {items.map((item) => (
         <div className="py-4">
           <h2>{item.label}</h2>
-          <p>{item.content}</p>
+          <div className="flex flex-wrap flex-row justify-start py-2">
+            {item.content.map((content) => (
+              <p
+                key={content}
+                className="bg-gray-200 px-4 py-2 mr-2 mt-2 text-gray-500 rounded font-semibold"
+              >
+                {content}
+              </p>
+            ))}
+          </div>
         </div>
       ))}
     </div>
