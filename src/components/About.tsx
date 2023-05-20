@@ -31,7 +31,10 @@ const experiences = [
 const About = () => {
   return (
     <div className="col-span-3">
-      <p className="uppercase text-xl tracking-widest text-indigo-600">About</p>
+      <p className="uppercase text-xl tracking-widest text-indigo-600 text-center">
+        About
+      </p>
+      <hr className="w-6 h-1 mx-auto my-4 bg-indigo-600 border-0 rounded" />
       <div className="py-4">
         <h2>Education</h2>
         {educations.map((education) => (

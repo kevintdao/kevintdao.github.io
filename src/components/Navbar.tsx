@@ -51,7 +51,7 @@ const Navbar = () => {
         shadow ? "shadow-xl bg-gray-50" : ""
       )}
     >
-      <nav className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
+      <nav className="flex justify-between items-center max-w-[1240px] w-full h-full px-4 2xl:px-16 mx-auto">
         <div className="text-2xl font-bold">Kevin Dao</div>
 
         <div>

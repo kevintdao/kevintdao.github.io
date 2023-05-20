@@ -46,9 +46,10 @@ const items = [
 const Skills = () => {
   return (
     <div className="col-span-3">
-      <p className="uppercase text-xl tracking-widest text-indigo-600">
+      <p className="uppercase text-xl tracking-widest text-indigo-600 text-center">
         Skills
       </p>
+      <hr className="w-6 h-1 mx-auto my-4 bg-indigo-600 border-0 rounded" />
       {items.map((item) => (
         <div className="py-4">
           <h2>{item.label}</h2>
