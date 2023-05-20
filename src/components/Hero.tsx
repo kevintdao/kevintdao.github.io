@@ -20,7 +20,7 @@ const links = [
 
 const Main = () => {
   return (
-    <div className="w-full h-screen text-center">
+    <div className="w-full min-h-screen text-center">
       <div className="max-w-[1240px] w-full h-full mx-auto p-2 py-32">
         <div className="flex flex-col items-center">
           <p className="uppercase text-sm tracking-widest text-gray-600 py-2">
@@ -53,7 +53,7 @@ const Main = () => {
             ))}
           </div>
 
-          <div className="mt-0 sm:mt-4 md:mt-8">
+          <div className="mt-8 sm:mt-10 md:mt-16">
             <a href="#about">
               <HiArrowDown size={ICON_SIZE} className="animate-bounce" />
             </a>
