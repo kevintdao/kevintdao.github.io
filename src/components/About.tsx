@@ -41,7 +41,7 @@ const About = () => {
       <div className="py-4">
         <h2>Education</h2>
         {educations.map((education) => (
-          <div className="py-2">
+          <div className="py-4">
             <p className="text-sm text-gray-500 italic">{education.date}</p>
             <p className="text-xl font-bold">{education.degree}</p>
             <div className="flex flex-col justify-start md:flex-row md:justify-between uppercase font-semibold">
@@ -58,7 +58,7 @@ const About = () => {
       <div className="py-4">
         <h2>Experiences</h2>
         {experiences.map((experience) => (
-          <div className="py-2">
+          <div className="py-4">
             <p className="text-sm text-gray-500 italic">{experience.date}</p>
             <p className="text-xl font-bold">{experience.position}</p>
             <p className="uppercase font-semibold text">{experience.company}</p>

@@ -28,7 +28,7 @@ const projects = [
     title: "Hospital Management System",
     description: "A hospital management system for a local hospital",
     img: Project3,
-    tech: "React, TypeScript, TailwindCSS",
+    tech: "Next.js, TypeScript, TailwindCSS, tRPC, Prisma, mySQL, Jest, Playwright, Docker",
     github: "https://github.com/brandonegg/hospitality",
   },
   {
