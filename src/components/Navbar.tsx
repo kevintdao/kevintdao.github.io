@@ -48,13 +48,15 @@ const Navbar = () => {
       )}
     >
       <nav className="flex justify-between items-center max-w-[1240px] w-full h-full px-4 2xl:px-16 mx-auto">
-        <div className="text-2xl font-bold">Kevin Dao</div>
+        <div className="text-2xl font-bold">
+          <a href="#">Kevin Dao</a>
+        </div>
 
         <div>
           <ul className="hidden md:flex">
             {links.map((link) => (
               <a href={link.href} key={link.href}>
-                <li className="ml-10 text-sm uppercase hover:border-b font-semibold">
+                <li className="ml-10 text-sm uppercase hover:border-b font-semibold border-gray-700">
                   {link.name}
                 </li>
               </a>
