@@ -69,17 +69,16 @@ const Navbar = () => {
 
       {/* mobile side menu */}
       <div
-        className={
-          nav ? "md:hidden fixed left-0 top-0 w-full h-screen bg-black/50" : ""
-        }
+        className={classNames(
+          "ease-out duration-500",
+          nav ? "fixed left-0 top-0 w-full h-screen md:hidden bg-black/50" : ""
+        )}
         onClick={handleNav}
       >
         <div
           className={classNames(
-            "fixed top-0 p-10 ease-in duration-500",
-            nav
-              ? "md:hidden left-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-gray-200 p-10 ease-in duration-500"
-              : "left-[-100%]"
+            "md:hidden fixed top-0 p-10 ease-in duration-500  w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-gray-200",
+            nav ? "left-0" : "left-[-100%]"
           )}
         >
           <div>
