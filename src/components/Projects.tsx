@@ -11,16 +11,18 @@ const projects = [
     title: "Tuneguessr",
     description: "A music guessing game using Spotify's API",
     img: Project1,
-    tech: "React, TypeScript, TailwindCSS",
+    tech: "Next.js, TypeScript, Mantine, tRPC, MongoDB, Spotify API, Vercel",
     github: "https://github.com/kevintdao/tuneguessr",
     demo: "https://tuneguessr.vercel.app/",
   },
   {
     title: "IoT LED Chessboard",
-    description: "A chessboard that lights up the squares of valid moves",
+    description:
+      "A chessboard that lights up the squares of valid moves and update the board on a web application",
     img: Project2,
-    tech: "React, TypeScript, TailwindCSS",
+    tech: "React (Vite), TypeScript, TailwindCSS, Node.js, Stockfish, Firebase, Raspberry Pi, Python, Arduino, C++",
     github: "https://github.com/kevintdao/LED-Chessboard",
+    demo: "https://www.youtube.com/watch?v=VBVisldkmQQ",
   },
   {
     title: "Hospital Management System",
@@ -31,9 +33,10 @@ const projects = [
   },
   {
     title: "HVAC Electronic Records",
-    description: "A system for HVAC technicians to keep track of their work",
+    description:
+      "Full stack web application for managing your buildings, units, and maintenance records for HVAC units all in one application.",
     img: Project4,
-    tech: "React, TypeScript, TailwindCSS",
+    tech: "Next.js, JavaScript, TailwindCSS, Django, Python, PostgreSQL, Heroku, Cypress, Jest",
     github: "https://github.com/kevintdao/hvac-erecords",
   },
   {
@@ -41,14 +44,14 @@ const projects = [
     description:
       "A system for school nurses to keep track of student medications",
     img: Project5,
-    tech: "React, TypeScript, TailwindCSS",
+    tech: "Ruby on Rails, Bootstrap, PostgreSQL, RSpec, Cucumber Heroku",
     github: "https://github.com/kevintdao/student-medication-logs",
   },
   {
     title: "Polling/Scheduling System",
-    description: "A system for polling and scheduling meetings",
+    description: "Web application for scheduling a poll, similar to Doodle.",
     img: Project6,
-    tech: "React, TypeScript, TailwindCSS",
+    tech: "Next.js, TailwindCSS, JavaScript, Firebase, Vercel",
     github: "https://github.com/kevintdao/senior-design-lab-3",
   },
 ];

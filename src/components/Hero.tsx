@@ -43,10 +43,12 @@ const Main = () => {
             I love developing web applications and learning new technologies.
           </p>
 
-          <div className="flex items-center justify-between max-w-[330px] m-auto py-4 gap-4">
+          <div className="flex items-center justify-between max-w-[330px] m-auto py-4 gap-6">
             {links.map((link) => (
               <a href={link.url} target="_blank" rel="noreferrer">
-                <div className="p-6 border rounded-lg">{link.icon}</div>
+                <div className="hover:-translate-y-1 transition-transform cursor-pointer">
+                  {link.icon}
+                </div>
               </a>
             ))}
           </div>

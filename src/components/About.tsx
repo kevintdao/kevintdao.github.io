@@ -4,12 +4,15 @@ const educations = [
     school: "University of Iowa, Iowa City, IA",
     gpa: "GPA: 3.90/4.00",
     degree: "Master of Science (M.S) in Electrical & Computer Engineering",
+    focus: "Focus: Software Engineering & Machine Learning",
   },
   {
     date: "August 2018 - May 2022",
     school: "University of Iowa, Iowa City, IA",
     gpa: "GPA: 3.89/4.00",
     degree: "Bachelor of Science (B.S.E) in Computer Science & Engineering",
+    focus: "Focus: Software Engineering",
+    distinction: "Graduated with Distinction",
   },
 ];
 
@@ -39,12 +42,15 @@ const About = () => {
         <h2>Education</h2>
         {educations.map((education) => (
           <div className="py-2">
-            <p>{education.date}</p>
-            <div className="flex justify-between">
+            <p className="text-sm text-gray-500 italic">{education.date}</p>
+            <p className="text-xl font-bold">{education.degree}</p>
+            <div className="flex flex-col justify-start md:flex-row md:justify-between uppercase font-semibold">
               <p>{education.school}</p>
               <p>{education.gpa}</p>
             </div>
-            <p>{education.degree} </p>
+            <p className="text-sm text-gray-500 italic">
+              {education.distinction}
+            </p>
           </div>
         ))}
       </div>
@@ -53,9 +59,9 @@ const About = () => {
         <h2>Experiences</h2>
         {experiences.map((experience) => (
           <div className="py-2">
-            <p>{experience.date}</p>
-            <p>{experience.position}</p>
-            <p>{experience.company}</p>
+            <p className="text-sm text-gray-500 italic">{experience.date}</p>
+            <p className="text-xl font-bold">{experience.position}</p>
+            <p className="uppercase font-semibold text">{experience.company}</p>
             <ul className="list-disc list-desc ml-6">
               {experience.items.map((item) => (
                 <li className="cursor-default" key={item}>

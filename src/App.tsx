@@ -1,5 +1,4 @@
 import About from "./components/About";
-import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Main from "./components/Hero";
 import Navbar from "./components/Navbar";
@@ -18,10 +17,6 @@ const items = [
   {
     id: "projects",
     component: <Projects />,
-  },
-  {
-    id: "contact",
-    component: <Contact />,
   },
 ];
 

@@ -19,10 +19,6 @@ const links = [
     name: "Projects",
     href: "#projects",
   },
-  {
-    name: "Contact",
-    href: "#contact",
-  },
 ];
 
 const Navbar = () => {
@@ -58,7 +54,7 @@ const Navbar = () => {
           <ul className="hidden md:flex">
             {links.map((link) => (
               <a href={link.href} key={link.href}>
-                <li className="ml-10 text-sm uppercase hover:border-b">
+                <li className="ml-10 text-sm uppercase hover:border-b font-semibold">
                   {link.name}
                 </li>
               </a>
@@ -97,7 +93,7 @@ const Navbar = () => {
               <ul className="uppercase">
                 {links.map((link) => (
                   <a href={link.href} key={link.href}>
-                    <li className="py-4 text-sm">{link.name}</li>
+                    <li className="py-4 text-sm font-semibold">{link.name}</li>
                   </a>
                 ))}
               </ul>
