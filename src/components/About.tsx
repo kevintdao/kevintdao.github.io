@@ -39,7 +39,7 @@ const About = () => {
       </p>
       <hr className="w-6 h-1 mx-auto my-4 bg-indigo-600 border-0 rounded" />
       <div className="py-4">
-        <h2>Education</h2>
+        <h2 className="text-center md:text-left">Education</h2>
         {educations.map((education) => (
           <div className="py-4">
             <p className="text-sm text-gray-500 italic">{education.date}</p>
@@ -56,7 +56,7 @@ const About = () => {
       </div>
 
       <div className="py-4">
-        <h2>Experiences</h2>
+        <h2 className="text-center md:text-left">Experiences</h2>
         {experiences.map((experience) => (
           <div className="py-4">
             <p className="text-sm text-gray-500 italic">{experience.date}</p>

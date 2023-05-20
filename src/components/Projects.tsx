@@ -80,7 +80,7 @@ const Projects = () => {
                       alt={project.title}
                       width={1000}
                       height={1000}
-                      className="rounded-xl shadow-xl hover:opacity-70"
+                      className="rounded-xl shadow-lg hover:opacity-70 hover:scale-[101%] hover:shadow-xl"
                     />
                   </a>
                 </div>
