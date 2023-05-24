@@ -79,7 +79,7 @@ const Navbar = () => {
       >
         <div
           className={classNames(
-            "md:hidden fixed top-0 p-10 ease-in duration-500  w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-gray-200",
+            "md:hidden fixed top-0 p-10 ease-in duration-500 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-gray-50",
             nav ? "left-0" : "left-[-100%]"
           )}
         >

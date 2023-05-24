@@ -9,7 +9,7 @@ import Project6 from "../assets/images/project6.png";
 const projects = [
   {
     title: "Tuneguessr",
-    description: "A music guessing game using Spotify's API",
+    description: "A music guessing game using Spotify's API.",
     img: Project1,
     tech: "Next.js, TypeScript, Mantine, tRPC, MongoDB, Spotify API, Vercel",
     github: "https://github.com/kevintdao/tuneguessr",
@@ -18,7 +18,7 @@ const projects = [
   {
     title: "IoT LED Chessboard",
     description:
-      "A chessboard that lights up the squares of valid moves and update the board on a web application",
+      "A chessboard that lights up the squares of valid moves and update the board on a web application.",
     img: Project2,
     tech: "React (Vite), TypeScript, TailwindCSS, Node.js, Stockfish, Firebase, Raspberry Pi, Python, Arduino, C++",
     github: "https://github.com/kevintdao/LED-Chessboard",
@@ -26,7 +26,8 @@ const projects = [
   },
   {
     title: "Hospital Management System",
-    description: "A hospital management system for a local hospital",
+    description:
+      "An open platform hospital management system for doctors to manage their patients and appointments, and for patients to view their medical records and upcomming appointments.",
     img: Project3,
     tech: "Next.js, TypeScript, TailwindCSS, tRPC, Prisma, mySQL, Jest, Playwright, Docker",
     github: "https://github.com/brandonegg/hospitality",
@@ -42,9 +43,9 @@ const projects = [
   {
     title: "Student Medication Logs",
     description:
-      "A system for school nurses to keep track of student medications",
+      "A system for school nurses to keep track of student medications.",
     img: Project5,
-    tech: "Ruby on Rails, Bootstrap, PostgreSQL, RSpec, Cucumber Heroku",
+    tech: "Ruby on Rails, Bootstrap, PostgreSQL, RSpec, Cucumber, Heroku",
     github: "https://github.com/kevintdao/student-medication-logs",
   },
   {

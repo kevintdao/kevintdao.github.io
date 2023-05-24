@@ -1,4 +1,4 @@
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiArrowDown } from "react-icons/hi";
 
 import ProfileImage from "../assets/images/img-profile.jpg";
@@ -15,6 +15,11 @@ const links = [
     name: "Github",
     url: "https://github.com/kevintdao",
     icon: <FaGithub size={ICON_SIZE} />,
+  },
+  {
+    name: "Mail",
+    url: "mailto:kevintdao00@gmail.com",
+    icon: <FaEnvelope size={ICON_SIZE} />,
   },
 ];
 
@@ -34,7 +39,7 @@ const Main = () => {
             width={100}
           />
 
-          <h1 className="py-4 text-gray-700">
+          <h1 className="py-4 text-gray-800">
             Hi, I'm <span className="text-indigo-600">Kevin</span>
           </h1>
           <h1 className="py-2 text-gray-700">Software Engineer</h1>
