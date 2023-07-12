@@ -18,14 +18,19 @@ const educations = [
 
 const experiences = [
   {
-    date: "June 2021 - Present",
+    date: "June 2023 - Present",
+    position: "Cloud Developer",
+    company: "Collins Aerospace - Cedar Rapids, IA",
+    items: [],
+  },
+  {
+    date: "June 2021 - July 2023",
     position: "Software Developer",
-    company: "Iowa Reading Research Center, Iowa City, IA",
+    company: "Iowa Reading Research Center - Iowa City, IA",
     items: [
       "Engineered web applications using React, NodeJS, Express, PHP, and SQL in a small team setting to expedite research on elementary and middle school students; reduced the average analysis time by 40%.",
       "Revamped the UI/UX of 5 existing projects by integrating user feedback, resulting in a 40% increase in user retention and a 25% increase in daily active users.",
       "Restructured the codebase to eliminate redundant functions and improve code readability, reducing development time by 30% and increasing code maintainability.",
-      "Mastered PHP programming language within 2 weeks to build a new feature for an existing project; feature increased user engagement by 40%.",
       "Produced comprehensive documentation for 3+ current and past projects to onboard new developers, reducing new hire ramp-up time by 60%.",
     ],
   },
